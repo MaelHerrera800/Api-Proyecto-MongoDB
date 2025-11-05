@@ -1,3 +1,6 @@
+from app.models.lugaresEvento import lugaresEvento
+from app.models.organizacionesExternas import OrganizacionExterna
+from app.models.usuariosOrganizadores import UsuarioOrganizador
 from beanie import Document, PydanticObjectId
 from typing import Optional, List
 from datetime import date
@@ -14,8 +17,8 @@ class EventoModel(Document):
     orgaznizado_por: str
     tipo_aval: str
     lugares_evento: Optional[List[lugaresEvento]] = []
-    organizaciones_externas: Optional[List[organizacionExterna]] = []
-    usuarios_organizadores: Optional[List[usuariosOrganizador]] = []
+    organizaciones_externas: Optional[List[OrganizacionExterna]] = []
+    usuarios_organizadores: Optional[List[UsuarioOrganizador]] = []
     evento_aval_url: str
 
     class Settings:
