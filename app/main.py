@@ -43,3 +43,4 @@ app.include_router(api_router_v1, prefix="/api/v1")
 @app.get("/")
 async def root():
     return RedirectResponse(url="/docs")
+
