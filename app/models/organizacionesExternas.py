@@ -7,4 +7,5 @@ class OrganizacionExterna(BaseModel):
     asiste_representante_legal: str
     nombre_representante_legal: str
     nombre_representante_alterno: str
-    certido_participacion_url: str
+
+    #ola uwu
